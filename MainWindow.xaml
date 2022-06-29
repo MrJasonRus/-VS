@@ -1,0 +1,111 @@
+﻿<Window x:Class="СправочникПоVS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:СправочникПоVS"
+        xmlns:viewModel="clr-namespace:СправочникПоVS.MVVM.ViewModel"
+        mc:Ignorable="d"
+        Height="600" Width="1000"
+        Style="{StaticResource WindowStyleTheme}"
+        ResizeMode= "CanResizeWithGrip"
+        Window.MinWidth="450"
+        Window.MinHeight="350"
+        Background= "Transparent">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>   
+
+    <Border Background= "#53377A">
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!--Заголовок программы-->
+            <StackPanel Grid.Row="0" 
+                        Background= "#43376A"
+                        MouseMove ="Window_MouseMove"/>
+            <TextBlock Text="Visual Studio 2022"
+                       FontFamily="Impact"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="White"
+                       FontSize="22"
+                       Margin="0,-30,0,0">
+                <TextBlock.Effect>
+                    <DropShadowEffect/>
+                </TextBlock.Effect>
+            </TextBlock>
+
+
+            <StackPanel Grid.Row="1"
+                        MouseMove ="Window_MouseMove">
+
+                <!--Начало левого меню-->
+                <RadioButton Content="Главная"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="24"
+                             FontWeight="Bold"
+                             FontFamily="Bahnschrift Condensed"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewCommand_0}"/>
+
+                <RadioButton Content="Начало работы"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="20"
+                             FontFamily="Bahnschrift Condensed"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding BeginWorkViewCommand_1}"/>
+
+                <RadioButton Content="Работа в пространстве"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="20"
+                             FontFamily="Bahnschrift Condensed"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding SpaceViewCommand_2}"/>
+
+                <RadioButton Content="Пример проектов"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="20"
+                             FontFamily="Bahnschrift Condensed"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ExamplesViewCommand_3}"/>
+
+                <RadioButton Content="Расширения"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="20"
+                             FontFamily="Bahnschrift Condensed"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AddonsViewCommand_4}"/>
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="0"
+                        Grid.Column="1"
+                        Background= "#43376A"
+                        MouseMove ="Window_MouseMove"/>
+
+            <!--Поле информации-->
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
+        </Grid>
+    </Border>
+
+</Window>

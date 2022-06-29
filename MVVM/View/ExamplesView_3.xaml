@@ -1,0 +1,210 @@
+﻿<UserControl x:Class="СправочникПоVS.MVVM.View.ExamplesView_3"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:СправочникПоVS.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="3650" d:DesignWidth="800">
+
+    <FlowDocumentScrollViewer Foreground="AliceBlue">
+        <FlowDocument FontFamily="Franklin Gothic Book">
+            <Paragraph FontSize="28"
+                       FontFamily="Franklin Gothic Heavy">
+                Примеры проектов
+            </Paragraph>
+
+            <Paragraph>
+                Наличие проекта для отработки навыков программирования в экосистеме Visual Studio позволит сосредоточиться, 
+                чтобы новые знания закрепились в памяти. Вы будете вязнуть, делать множество ошибок. 
+                Однако вам придется искать информацию в Интернете, чтобы понять, что должно делать ваше приложение. 
+                Но, в конце концов проходя этот путь, вы многому научитесь, потому что это марафон, а не спринт. Не надейтесь 
+                стать экспертом в течение одного месяца.
+            </Paragraph>
+
+            <Paragraph>
+                Изучение сфер программирования может быть очень увлекательным, но если хочется больше чем базовые расчетные программы, 
+                здесь собрано множество интересных идей проектов, способных натолкнуть или вдохновить на реализацию.
+            </Paragraph>
+
+            <List MarkerStyle="Box">
+                <ListItem>
+                    <Paragraph FontWeight="Bold"
+                               FontSize="22">
+                        Библиотека фильмов
+                    </Paragraph>
+
+                    <Paragraph Margin="10">
+                        Как насчет того, чтобы создать свою 
+                        собственную базу данных фильмотеки? Это будет настольное приложение, хранящее данные о фильмах, 
+                        которые вы имеете, любите, хотите посмотреть. Приложение должно уметь:
+                    </Paragraph>
+
+                    <List>
+                        <ListItem>
+                            <Paragraph>
+                                Сохранять данные о новом фильме
+                            </Paragraph>
+                        </ListItem>
+
+                        <ListItem>
+                            <Paragraph>
+                                Извлекать данные о фильме, который уже есть в библиотеке
+                            </Paragraph>
+                        </ListItem>
+
+                        <ListItem>
+                            <Paragraph>
+                                Включать функцию поиска и возможность редактирования записей.
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+
+                    <Paragraph Margin="10">
+                Вы можете использовать Microsoft SQL Server для базы данных и Visual Studio для фронт-энда. 
+                Какие еще функции вы можете добавить? Может быть, вы сможете использовать данные из Интернет ресурсов, по типу Кинопоиска для 
+                наполнения. Возможно, он сможет получать изображения, кинопостеры и трейлеры из Интернета.
+                    </Paragraph>
+                </ListItem>
+
+                <ListItem>
+                    <Paragraph FontWeight="Bold"
+                               FontSize="22">
+                        Приложение для ведения заметок
+                    </Paragraph>
+
+                    <Paragraph Margin="10">
+                        Необходим графический интерфейс с редактором и некоторыми меню.
+                        Нужно сохранять заметки в папке или в базе данных, например, SQLite.
+                        Как только вы сделаете эти основы, вы сможете добавить такие функции, как:
+                    </Paragraph>
+                </ListItem>
+
+                <ListItem>
+                    <Paragraph FontWeight="Bold"
+                               FontSize="22">
+                        Библиотека электронных книг и возможность их чтения
+                    </Paragraph>
+
+                    <Paragraph Margin="10">
+                        Электронные книги позволяют хранить 
+                        на жестком диске столько же книг, сколько и в библиотеке, но когда их становится так много, 
+                        их становится трудно упорядочить. Можно создать приложение, которое не только отображает электронные книги, 
+                        чтобы вы могли их читать, но и ищет файлы на жестком диске и добавляет их в библиотеку.
+                    </Paragraph>
+
+                    <Paragraph>
+                        Можно начать с этих функций:
+                    </Paragraph>
+
+                    <List>
+                        <ListItem>
+                            <Paragraph>
+                                Начните с одного формата, например EPUB, который имеет специальные стандарты, 
+                                упрощающие разбор.
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Найдите на всем жестком диске файлы с 
+                                расширением и добавьте их в очередь.
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Разберите файлы на предмет автора, названия, издателя и других значений, 
+                                по которым вы хотите искать или сортировать.
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Добавляет эти данные в базу данных.
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Создает представление библиотеки, позволяющее перемещаться
+                                и искать по найденным книгам.
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Создайте представление для чтения.
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                    <Paragraph Margin="10">
+                        Вы также можете добавить такие функции, как заметки, закладки и выделение.
+                    </Paragraph>
+                </ListItem>
+
+                <ListItem>
+                    <Paragraph FontWeight="Bold"
+                               FontSize="22">
+                        Больше проектов
+                    </Paragraph>
+
+                    <Paragraph Margin="10">
+                        Чтобы не потерять концентрацию, необходимую для завершения проектов, 
+                        вам нужно выбрать проект, который вас интересует, или создать инструмент, который 
+                        вы могли бы использовать сами. Если ни один из вышеперечисленных проектов вам не 
+                        подходит, вот список других идей проектов:
+                    </Paragraph>
+
+                    <List>
+                        <ListItem>
+                            <Paragraph>
+                                Генератор штрих-кодов
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Мобильная система удаленного управления
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Система выставления счетов за электроэнергию
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Шахматная игра
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Система онлайн-опросов
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Виртуальная частная сеть (VPN)
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Система бронирования авиабилетов
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Система отслеживания мобильных телефонов
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                Программное обеспечение для проведения экзаменов
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                    <Paragraph Margin="20">
+                        <Italic>и множество других</Italic>
+                    </Paragraph>
+                </ListItem>
+            </List>
+
+
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</UserControl>

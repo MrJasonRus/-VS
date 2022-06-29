@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="СправочникПоVS.MVVM.View.AddonsView_4"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:СправочникПоVS.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="3650" d:DesignWidth="800">
+
+    <FlowDocumentScrollViewer Foreground="AliceBlue">
+        <FlowDocument FontFamily="Franklin Gothic Book">
+            <Paragraph FontSize="28"
+                       FontFamily="Franklin Gothic Heavy">
+                Расширения
+            </Paragraph>
+
+            <Paragraph>Расширения — это пакеты кода, 
+                которые выполняются в Visual Studio и 
+                предоставляют новые или улучшенные функции. К числу расширений 
+                относятся элементы управления, примеры, шаблоны, инструменты или другие компоненты, 
+                расширяющие возможности Visual Studio, например Live 
+                Share или Visual Studio IntelliCode.
+            </Paragraph>
+
+            <Paragraph>Чтобы добавить в Visual Studio поддержку проектов для C# и .NET 6, 
+                в программе установки среди рабочих нагрузок можно выбрать только пункт ASP.NET и разработка веб-приложений. Можно выбрать и больше 
+                опций или вообще все опции, однако стоит учитывать свободный размер 
+                на жестком диске - чем больше опций будет выбрано, соответственно тем больше места на диске будет занято.
+            </Paragraph>
+
+            <Paragraph></Paragraph>
+
+            <Paragraph>
+                Используйте диалоговое окно Управление 
+                расширениями для установки расширений Visual
+                Studio и управления ими. Чтобы открыть 
+                диалоговое окно Управление расширениями, выберите Расширения>Управление расширениями. 
+                Или введите строку Расширения в поле поиска, а затем выберите Управление расширениями.
+            </Paragraph>
+
+            <Paragraph>
+                <Image Source="/Images/4/4.1.jpg"/>
+            </Paragraph>
+
+            <Paragraph>
+                На левой панели расширения разделены на установленные, доступные в Visual Studio Marketplace (онлайн) и имеющие 
+                доступные обновления. Диспетчер перемещаемых расширений хранит список всех расширений Visual Studio, 
+                которые вы установили на любом компьютере или экземпляре Visual Studio. С его помощью вы легко сможете 
+                находить нужные вам расширения.
+            </Paragraph>
+
+            <Paragraph FontSize="28"
+                       FontFamily="Franklin Gothic Heavy">
+                Пакеты Nuget Explorer
+            </Paragraph>
+
+            <Paragraph>
+                <Italic>NuGet Manager – это инструмент, который помогает разработчику управлять сторонними библиотеками (пакетами) в своем проекте.</Italic>
+            </Paragraph>
+
+            <Paragraph>
+                Пакеты NuGet содержат многократно используемый код, предлагаемый другими разработчиками для ваших проектов. 
+                Пакеты устанавливаются в проекте
+                Visual Studio с помощью диспетчера пакетов NuGet, консоли диспетчера пакетов или интерфейса командной строки .NET.
+                Процесс применяется к любому другому проекту .NET или .NET Core.
+            </Paragraph>
+
+            <Paragraph>
+                С помощью пользовательского интерфейса диспетчера пакетов NuGet в Visual Studio вы можете легко устанавливать, удалять и 
+                обновлять пакеты NuGet в проектах и решениях в ОС Windows.
+            </Paragraph>
+
+            <Paragraph>
+                <Image Source="/Images/4/4.2.jpg"/>
+            </Paragraph>
+
+            <Paragraph>
+                NuGet Manager открывается в новой вкладке в текстовом редакторе.
+            </Paragraph>
+
+            <Paragraph>
+                Главные функции:
+            </Paragraph>
+            
+            <List>
+                <ListItem>
+                    <Paragraph>
+                        Обзор - позволяет найти и установить нужные нам пакеты из хранилища NuGet
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Установлено - показывает список уже установленных пакетов в нашем проекте
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Обновления - те пакеты в проекте, которые можно обновить до новой/последней версии
+                    </Paragraph>
+                </ListItem>
+            </List>
+
+            <Paragraph>
+                <Image Source="/Images/4/4.3.jpg"/>
+            </Paragraph>
+
+            <Paragraph>
+                Также в интерфейсе представлены такие функции:
+            </Paragraph>
+
+            <List>
+                <ListItem>
+                    <Paragraph>
+                        Строка поиска.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        "Включить предварительные версии" - Включение в выдачу предрелизные версии библиотек», тестовые или экспериментальные
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Выпадающий список "Источник пакета". В каком месте менеджер будет искать нужные нам библиотеки, будто
+                        <Bold>Nuget.Org</Bold> или иное.
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Главная панель с результатами выдачи (слева)
+                    </Paragraph>
+                </ListItem>
+                <ListItem>
+                    <Paragraph>
+                        Панель с описанием компонента, который мы выбрали (справа)
+                    </Paragraph>
+                </ListItem>
+            </List>
+
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</UserControl>

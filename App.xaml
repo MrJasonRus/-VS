@@ -1,0 +1,42 @@
+﻿<Application x:Class="СправочникПоVS.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:СправочникПоVS"
+             xmlns:viewModel="clr-namespace:СправочникПоVS.MVVM.ViewModel"
+             xmlns:view="clr-namespace:СправочникПоVS.MVVM.View"
+             
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/ScrollbarTheme.xaml"/>
+                <ResourceDictionary Source="Theme/WindowStyleTheme.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomeViewModel_0}">
+                <view:HomeView_0/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:BeginWorkViewModel_1}">
+                <view:BeginWorkView_1/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SpaceViewModel_2}">
+                <view:SpaceView_2/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ExamplesViewModel_3}">
+                <view:ExamplesView_3/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:AddonsViewModel_4}">
+                <view:AddonsView_4/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
